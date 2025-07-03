@@ -1,8 +1,5 @@
-import requests
-
-def run_firefox_mcp_tool(access_token):
-    url = "https://firefox-mcp.example.com/api/tool"  # Replace with real API
-    headers = {"Authorization": f"Bearer {access_token}"}
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
-    return response.json()
+def use_tool(access_token):
+    # Simulate calling a Firefox API
+    print(f"[TOOL] Using access token: {access_token}")
+    # Later, this is where you'll call a real API endpoint using requests.get() or post()
+    print("[TOOL] Tool executed successfully (dummy response)")
